@@ -1,3 +1,4 @@
+// component
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -6,24 +7,13 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+// Animation aos
 AOS.init({
-  duration: 1200,
+  offset: 400, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
 });
-
-// $(document).ready(function () {
-//   $("#owl-demo").owlCarousel({
-//     navigation: true, // Show next and prev buttons
-
-//     slideSpeed: 300,
-//     paginationSpeed: 400,
-
-//     items: 2,
-//     itemsDesktop: false,
-//     itemsDesktopSmall: false,
-//     itemsTablet: false,
-//     itemsMobile: false,
-//   });
-// });
 
 // get components
 const components = document.querySelectorAll(".js-component");
@@ -36,22 +26,3 @@ const loadComponent = async (c) => {
 };
 
 [...components].forEach(loadComponent);
-
-// google map
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: -25.344, lng: 131.031 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
-
-window.initMap = initMap;
