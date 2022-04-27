@@ -1,0 +1,96 @@
+.card {
+  height: 700px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.card-image-1 {
+  background: url(../images/portfolio_item_01.jpg);
+  .img span {
+    height: 100%;
+    background: url(../images/portfolio_item_01.jpg);
+    transition: 0.5s;
+  }
+}
+.card-image-2 {
+  background: url(../images/portfolio_item_02.jpg);
+  .img span {
+    background: url(../images/portfolio_item_02.jpg);
+    transition: 0.5s;
+  }
+}
+.card-image-3 {
+  background: url(../images/portfolio_item_03.jpg);
+  .img span {
+    background: url(../images/portfolio_item_03.jpg);
+    transition: 0.5s;
+  }
+}
+.card-image-4 {
+  background: url(../images/portfolio_item_04.jpg);
+  .img span {
+    background: url(../images/portfolio_item_04.jpg);
+    transition: 0.5s;
+  }
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+.card .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.card .img span {
+  width: 25%;
+  height: 100%;
+
+  transition: 0.5s;
+}
+.card .img span:nth-child(1) {
+  background-position: 0;
+  transition-delay: 0;
+}
+.card .img span:nth-child(2) {
+  background-position: 33.33333%;
+  transition-delay: 0.1s;
+}
+.card .img span:nth-child(3) {
+  background-position: 66.66666%;
+  transition-delay: 0.2s;
+}
+.card .img span:nth-child(4) {
+  background-position: 100%;
+  transition-delay: 0.3s;
+}
+
+.card:hover .img > span {
+  transform: translateY(-100%);
+}
+.card:hover .content {
+  transform: translateY(0%);
+  transition: 1s;
+  transition-delay: 0.1s;
+}
+
+.content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px 20px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
