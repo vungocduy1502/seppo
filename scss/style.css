@@ -148,12 +148,23 @@
   outline: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Rubik", sans-serif;
-  overflow-x: hidden;
   color: #b3b3b3;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 html {
@@ -909,6 +920,12 @@ p {
   }
   .footer-mail {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-mail {
+    font-size: 20px;
   }
 }
 
