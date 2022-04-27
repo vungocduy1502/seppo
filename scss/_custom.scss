@@ -63,6 +63,7 @@ img {
     transform: translateX(100%);
   }
 }
+
 #content {
   margin-top: 77px;
 }
@@ -81,9 +82,9 @@ img {
     font-weight: 700;
   }
 }
-
-// services
-#services {
+#services,
+#teams,
+#milestones {
   background-color: #000000;
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -100,6 +101,8 @@ img {
   margin-bottom: -10px;
   -webkit-transform: translateZ(0);
 }
+
+// service
 .service__text {
   h4 {
     font-size: 46px;
@@ -125,6 +128,7 @@ img {
   background-size: cover;
 }
 
+// news
 .blog-item-holder-scode {
   .blog-item-image {
     overflow: hidden;
@@ -155,6 +159,8 @@ img {
     letter-spacing: -1px;
   }
 }
+
+// portfolio
 .portfolio-grid {
   position: relative;
   height: 951.5px;
@@ -327,12 +333,8 @@ img {
     transition: opacity 0.3s ease-in-out;
   }
 }
-#teams {
-  background-color: #000000;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
+
+// team
 .member {
   text-align: center;
   margin: 70px 0;
@@ -404,12 +406,7 @@ img {
   left: -45px;
 }
 
-#milestones {
-  background-color: #000000;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
+// milestones
 .milestones-holder {
   padding: 0;
   list-style: none;
@@ -445,6 +442,7 @@ img {
   }
 }
 
+// skills
 .skills-holder {
   position: relative;
   margin: 40px 0;
@@ -487,75 +485,11 @@ img {
     background-color: #000;
   }
 }
+
+// map
 #map {
   height: 400px;
   /* The height is 400 pixels */
   width: 100%;
   margin: 50px 0 115px;
-}
-footer {
-  font-size: 16px;
-  line-height: 36px;
-  padding-top: 75px;
-  padding-bottom: 60px;
-  clear: both;
-  color: #fff;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center top;
-  background-color: #111;
-}
-.footer_logo {
-  img {
-    width: 88px;
-    height: 50px;
-    margin-bottom: 30px;
-  }
-}
-.footer-logo-divider {
-  position: relative;
-  height: 60px;
-  margin-bottom: 30px;
-  &:before {
-    content: "";
-    width: 2px;
-    height: 60px;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: calc(50% - 1px);
-  }
-}
-.footer-mail {
-  font-size: 46px;
-  margin-bottom: 35px;
-  line-height: 100%;
-  font-weight: 700;
-  a {
-    color: #fff;
-  }
-}
-.footer-social-divider {
-  position: relative;
-  height: 62px;
-  margin-bottom: 35px;
-  &:before {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 60px;
-    background-color: white;
-    left: calc(50% - 1px);
-    top: 0;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    width: 300px;
-    height: 2px;
-    background-color: white;
-    left: calc(50% - 150px);
-    bottom: 0;
-  }
 }

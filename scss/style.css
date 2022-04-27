@@ -246,7 +246,9 @@ img {
   font-weight: 700;
 }
 
-#services {
+#services,
+#teams,
+#milestones {
   background-color: #000000;
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -520,13 +522,6 @@ img {
   transition: opacity 0.3s ease-in-out;
 }
 
-#teams {
-  background-color: #000000;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
 .member {
   text-align: center;
   margin: 70px 0;
@@ -602,13 +597,6 @@ img {
   position: absolute;
   bottom: -35px;
   left: -45px;
-}
-
-#milestones {
-  background-color: #000000;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: auto;
 }
 
 .milestones-holder {
@@ -824,37 +812,6 @@ header {
   .header_icon {
     margin-right: 23px;
   }
-}
-
-[class^="icon"] {
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.icon-cart {
-  background-image: url("./images/icons/cart.svg");
-  width: 21px;
-  height: 21px;
-}
-
-.icon-like {
-  background-image: url("./images/icons/like.svg");
-  width: 21px;
-  height: 21px;
-}
-
-.icon-user {
-  background-image: url("./images/icons/user.svg");
-  width: 21px;
-  height: 21px;
-}
-
-.icon-search {
-  background-image: url("./images/icons/search.svg");
-  width: 21px;
-  height: 21px;
 }
 
 .icon i {
