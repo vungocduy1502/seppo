@@ -14,9 +14,15 @@
 }
 .card-image-2 {
   background: url(../images/portfolio_item_02.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   .img span {
     background: url(../images/portfolio_item_02.jpg);
     transition: 0.5s;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 .card-image-3 {
