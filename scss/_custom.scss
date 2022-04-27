@@ -404,17 +404,7 @@ img {
   bottom: -35px;
   left: -45px;
 }
-.social {
-  display: inline-block;
-  font-size: 25px;
-  margin-right: 20px;
-  a {
-    color: #fff !important;
-    &:hover {
-      opacity: 0.5;
-    }
-  }
-}
+
 #milestones {
   background-color: #000000;
   background-position: left bottom;
@@ -496,5 +486,77 @@ img {
     width: 100%;
     height: 10px;
     background-color: #000;
+  }
+}
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  margin: 50px 0 115px;
+}
+footer {
+  font-size: 16px;
+  line-height: 36px;
+  padding-top: 75px;
+  padding-bottom: 60px;
+  clear: both;
+  color: #fff;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  background-color: #111;
+}
+.footer_logo {
+  img {
+    width: 88px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+}
+.footer-logo-divider {
+  position: relative;
+  height: 60px;
+  margin-bottom: 30px;
+  &:before {
+    content: "";
+    width: 2px;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+  }
+}
+.footer-mail {
+  font-size: 46px;
+  margin-bottom: 35px;
+  line-height: 100%;
+  font-weight: 700;
+  a {
+    color: #fff;
+  }
+}
+.footer-social-divider {
+  position: relative;
+  height: 62px;
+  margin-bottom: 35px;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background-color: white;
+    left: calc(50% - 1px);
+    top: 0;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    background-color: white;
+    left: calc(50% - 150px);
+    bottom: 0;
   }
 }
