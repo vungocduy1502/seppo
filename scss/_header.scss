@@ -6,7 +6,6 @@ header {
   width: 100% !important;
   top: 0;
   position: fixed;
-  -webkit-transform: translateZ(0);
 }
 .header_menu {
   display: flex;
@@ -22,6 +21,25 @@ header {
   width: 88px;
   height: 50px;
 }
+.navbar {
+  background-color: #000;
+}
+.nav-item {
+  margin: 0px 15px;
+  a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
+.navbar-toggler {
+  i {
+    color: #fff;
+  }
+}
 @media screen and (max-width: 768px) {
   .banner_image_header {
     background-position: center;
@@ -32,20 +50,25 @@ header {
   .header_icon {
     margin-right: 23px;
   }
-}
 
-.scroll-slow p {
-  white-space: nowrap !important;
-  position: absolute;
-  width: 100%;
-  font-size: 14px;
-  color: #fff;
-  height: 20px;
-  text-align: center;
-  animation: scroll-slow 30s linear infinite;
-  right: -100%;
+  .nav-item {
+    margin: 15px;
+  }
+  .navbar-collapse {
+    margin-top: 30px;
+  }
+  .scroll-slow p {
+    white-space: nowrap !important;
+    position: absolute;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    height: 20px;
+    text-align: center;
+    animation: scroll-slow 30s linear infinite;
+    right: -100%;
+  }
 }
-
 /* Browser bug fix */
 
 @keyframes scroll-slow {

@@ -26,3 +26,16 @@ p {
   font-weight: 700;
   padding-bottom: 35px;
 }
+@media (max-width: 769px) {
+  .medium-text {
+    font-size: 40px;
+    line-height: 105%;
+    padding-top: 10px;
+  }
+  .skill-percent {
+    font-size: 40px;
+  }
+  .footer-mail {
+    font-size: 40px;
+  }
+}

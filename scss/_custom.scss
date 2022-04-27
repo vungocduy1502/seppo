@@ -65,7 +65,7 @@ img {
 }
 
 #content {
-  margin-top: 77px;
+  margin-top: 66px;
 }
 #home {
   background-image: url(../images/hero_image_01.jpg);
@@ -80,6 +80,12 @@ img {
     line-height: 120%;
     margin-bottom: 40px;
     font-weight: 700;
+    @media (max-width: 767.98px) {
+      font-size: 60px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 40px;
+    }
   }
 }
 #services,
@@ -113,6 +119,9 @@ img {
   p {
     font-size: 18px;
     max-width: 92%;
+    @media (max-width: 767.98px) {
+      font-size: 16px;
+    }
   }
 }
 .about__image {
@@ -160,11 +169,7 @@ img {
   }
 }
 
-// portfolio
-.portfolio-grid {
-  height: 700px;
-}
-
+// pricing
 .pricing-table {
   padding-bottom: 20px;
   background-color: #ffffff;
@@ -175,6 +180,7 @@ img {
   border: 2px solid #000;
   position: relative;
   text-align: left;
+  height: 100%;
   ul {
     padding: 0;
     list-style: none;
@@ -259,24 +265,23 @@ img {
 
 // team
 .member {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 70px 0;
   img {
     vertical-align: middle;
     width: 544px;
     height: 700px;
     transform: translate3d(0px, 0px, 0px);
-    display: inline-block;
-    position: relative;
   }
 }
 
 .member-info {
-  width: 592px;
   background-color: #fff;
-  padding: 65px 110px;
-  display: inline-block;
-  vertical-align: middle;
+  padding: 30px;
+  height: 500px;
+  width: 500px;
   margin-left: -130px;
   text-align: left;
   position: relative;
@@ -286,11 +291,10 @@ img {
   .member-info {
     margin-left: auto;
     margin-right: -130px;
-    width: 592px;
     background-color: #fff;
-    padding: 65px 110px;
-    display: inline-block;
-    vertical-align: middle;
+    padding: 30px;
+    height: 500px;
+    width: 500px;
     text-align: left;
     position: relative;
     z-index: 31;
@@ -310,7 +314,7 @@ img {
   letter-spacing: 2px;
 }
 .member-name {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   color: #000;
   line-height: 150%;
@@ -320,6 +324,8 @@ img {
 }
 .member-content {
   margin-bottom: 35px;
+  overflow-y: scroll;
+  height: 260px;
 }
 .member-social-holder {
   background: #47ea4e;
@@ -340,9 +346,6 @@ img {
   margin: 30px 0;
 }
 .milestone-info-left {
-  margin-right: 35px;
-  text-align: right;
-  width: 30%;
   font-size: 80px;
   line-height: 100%;
   font-weight: 700;
@@ -352,7 +355,6 @@ img {
   text-shadow: -1px 0 #b3b3b3, 0 1px #b3b3b3, 1px 0 #b3b3b3, 0 -1px #b3b3b3;
 }
 .milestone-info-right {
-  width: 55%;
   h5 {
     font-size: 28px;
     color: #fff;
