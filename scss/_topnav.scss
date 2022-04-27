@@ -1,0 +1,70 @@
+.icon i {
+  color: #fff;
+}
+
+.topnav {
+  overflow: hidden;
+  padding-left: 54px;
+  a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 30px;
+  }
+  a.active {
+    background-color: #04aa6d;
+    color: white;
+  }
+  .icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topnav {
+    a {
+      display: none;
+    }
+    a.icon {
+      display: block;
+      position: absolute;
+      top: 25px;
+      right: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .d-none {
+    display: none;
+  }
+  .topnav.responsive {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    padding: 17px;
+    background: #fff;
+    text-align: center;
+    z-index: 100;
+    height: 100%;
+    .icon {
+      position: fixed;
+      top: 25px;
+      z-index: 999999;
+      right: 0;
+    }
+    a {
+      float: none;
+      display: block;
+    }
+    .topnav_text {
+      font-size: 20px;
+      line-height: 35px;
+      &:first-child {
+        padding-top: 40px;
+      }
+    }
+  }
+}

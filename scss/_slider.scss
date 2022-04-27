@@ -1,0 +1,54 @@
+.carousel-item {
+  font-size: 24px;
+  line-height: 35px;
+  background-color: #000;
+  padding: 130px;
+}
+.text-slider-header-quotes {
+  margin-bottom: 60px;
+  background-image: url(../images/quotes_image.png);
+  background-repeat: no-repeat;
+  width: 87px;
+  height: 74px;
+  background-size: 87px 74px;
+}
+.info-slider {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.icon_avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+.text-slider-name {
+  font-size: 18px;
+  margin: 0 20px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+.text-slide-position {
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  text-transform: uppercase;
+}
+.text-slider {
+  p {
+    font-size: 28px;
+  }
+}
+.carousel-control-next {
+  top: 75% !important;
+  width: 50px !important;
+  height: 50px;
+  right: 10% !important;
+}
+.carousel-control-prev {
+  left: 80% !important;
+  @extend .carousel-control-next;
+}
