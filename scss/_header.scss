@@ -6,15 +6,7 @@ header {
   width: 100% !important;
   top: 0;
   position: fixed;
-}
-.header_menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 98%;
-  max-width: 1450px;
-  min-height: 95px;
-  margin: auto;
+  height: 77px;
 }
 
 .header_logo {
@@ -23,9 +15,10 @@ header {
 }
 .navbar {
   background-color: #000;
+  // height: 100%;
 }
 .nav-item {
-  margin: 0px 15px;
+  margin: 15px;
   a {
     float: left;
     display: block;
@@ -44,38 +37,37 @@ header {
   .banner_image_header {
     background-position: center;
   }
-  header {
-    height: 80px;
-  }
+
   .header_icon {
     margin-right: 23px;
   }
 
-  .nav-item {
-    margin: 15px;
-  }
   .navbar-collapse {
     margin-top: 30px;
   }
-  .scroll-slow p {
-    white-space: nowrap !important;
-    position: absolute;
-    width: 100%;
-    font-size: 14px;
-    color: #fff;
-    height: 20px;
-    text-align: center;
-    animation: scroll-slow 30s linear infinite;
-    right: -100%;
-  }
 }
+/* Browser bug fix */
+.scroll-slow p {
+  white-space: nowrap !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  transform: translateX(100%);
+  animation: scroll-slow 30s linear infinite;
+  z-index: 1;
+}
+
+/* Move it (define the animation) */
 /* Browser bug fix */
 
 @keyframes scroll-slow {
   0% {
-    right: -100%;
+    transform: translateX(100%);
   }
   100% {
-    right: 100%;
+    transform: translateX(-100%);
   }
 }
